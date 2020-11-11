@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "419060274087",
+    "firebase_url": "https://criticalyspooling-ec776.firebaseio.com",
+    "project_id": "criticalyspooling-ec776",
+    "storage_bucket": "criticalyspooling-ec776.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:419060274087:android:057e99927db59fa6121c82",
+        "android_client_info": {
+          "package_name": "com.dinesh.criticalyspooling"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "419060274087-0n504ri4ajuma5r015g4sbot4sn6uhf3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAsXwNLRrKFGEY9LdLLbSFoUcs-yVpmUU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "419060274087-0n504ri4ajuma5r015g4sbot4sn6uhf3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

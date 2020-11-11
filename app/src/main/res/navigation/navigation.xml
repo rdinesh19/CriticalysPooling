@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/phoneAuthFragment">
+
+    <fragment
+        android:id="@+id/phoneAuthFragment"
+        android:name="com.dinesh.criticalyspooling.phoneauth.PhoneAuthFragment"
+        android:label="fragment_phoneauth"
+        tools:layout="@layout/fragment_phoneauth" >
+        <action
+            android:id="@+id/action_phoneAuthFragment_to_OTPValidationFragment"
+            app:destination="@id/OTPValidationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/OTPValidationFragment"
+        android:name="com.dinesh.criticalyspooling.otpvalidation.OTPValidationFragment"
+        android:label="fragment_otp_validation"
+        tools:layout="@layout/fragment_otp_validation" >
+        <argument
+            android:name="verificationId"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="token"
+            app:argType="string"
+            android:defaultValue="default" />
+        <action
+            android:id="@+id/action_OTPValidationFragment_to_criticalys_home_Screen"
+            app:destination="@id/criticalys_home_Screen" />
+    </fragment>
+    <fragment
+        android:id="@+id/criticalys_home_Screen"
+        android:name="com.dinesh.criticalyspooling.CriticalysHomeScreen"
+        android:label="fragment_criticalys_home__screen"
+        tools:layout="@layout/fragment_criticalys_home__screen" >
+        <action
+            android:id="@+id/action_criticalys_home_Screen_to_phoneAuthFragment"
+            app:destination="@id/phoneAuthFragment" />
+    </fragment>
+</navigation>

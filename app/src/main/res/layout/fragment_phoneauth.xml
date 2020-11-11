@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+   <data>
+       <variable
+           name="phoneAuthFragment"
+           type="com.dinesh.criticalyspooling.phoneauth.PhoneAuthFragment" />
+   </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/countryCodePicker"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="200dp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="@+id/editTextPhone"
+            app:layout_constraintStart_toStartOf="@+id/editTextPhone"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </com.hbb20.CountryCodePicker>
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:hint="@string/mobile_number_editText"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/submit_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/countryCodePicker"
+            android:importantForAutofill="no" />
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="196dp"
+            android:text="@string/submit_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/editTextPhone"
+            app:layout_constraintStart_toStartOf="@+id/editTextPhone"
+             />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
